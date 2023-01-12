@@ -1,5 +1,7 @@
 package com.judell.controllers;
 
+import com.judell.constants.RouteConstants;
+import com.judell.response.GenericResponse;
 import com.judell.services.HealthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,8 +13,8 @@ public class HealthController {
     @Autowired
     private HealthService healthService;
 
-    @GetMapping("/spring-sandbox/health")
-    public HttpStatus getHealth() {
+    @GetMapping(RouteConstants.HEALTH)
+    public GenericResponse getHealth() {
         return healthService.getHealth();
     }
 }

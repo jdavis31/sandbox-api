@@ -1,13 +1,19 @@
 package com.judell.services;
 
+import com.judell.response.GenericResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 @Service
 public class HealthService {
 
-    public HttpStatus getHealth() {
+    public GenericResponse getHealth() {
+        GenericResponse genericResponse = new GenericResponse();
 
-        return HttpStatus.OK;
+        genericResponse.setSuccess(true);
+        genericResponse.setMessage("Healthy");
+        genericResponse.setHttpStatus(HttpStatus.OK);
+
+        return genericResponse;
     }
 }
