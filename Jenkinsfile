@@ -22,7 +22,7 @@ pipeline {
                         flatten: true,
                         projectName: 'spring-sandbox-api',
                         selector: workspace(),
-                        target: '/opt/sandbox/api/spring/sandbox-api'
+                        target: '/opt/api/spring/sandbox'
                 sh 'sudo service spring-sandbox-api restart'
             }
         }
