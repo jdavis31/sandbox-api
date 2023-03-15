@@ -1,21 +1,13 @@
 package com.judell.services;
 
-import com.judell.response.GenericResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockitoAnnotations;
-import org.springframework.http.HttpStatus;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class HealthServiceTest {
-
-//    @InjectMocks
-//    ApiService apiService;
-
-//    @Mock
-//    ApiService apiService;
 
     HealthService healthService;
 
@@ -23,21 +15,6 @@ class HealthServiceTest {
     void setUp() {
         MockitoAnnotations.openMocks(this);
         healthService = new HealthService();
-    }
-
-    @Test
-    void getHealthTestSuccess() {
-        GenericResponse expectedResponse = new GenericResponse();
-
-        expectedResponse.setSuccess(false);
-        expectedResponse.setMessage("");
-        expectedResponse.setHttpStatus(HttpStatus.BAD_REQUEST);
-
-        GenericResponse actualResponse = new GenericResponse();
-
-
-
-//        assertThat();
     }
 
     @Test

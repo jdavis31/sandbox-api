@@ -1,9 +1,11 @@
 package com.judell.response;
 
 import lombok.Data;
+import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
 @Data
+@Getter
 public class GenericResponse {
     private String message;
     private boolean success;
