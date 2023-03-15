@@ -30,6 +30,7 @@ pipeline {
                         projectName: 'sandbox-api',
                         selector: workspace(),
                         target: '/opt/ec2-user/api/sandbox'
+                // comment
 //                sh 'sudo service spring-sandbox-api restart'
             }
         }
