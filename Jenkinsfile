@@ -14,6 +14,13 @@ pipeline {
                 }
             }
         }
+        stage ('Test') {
+            steps {
+                script {
+                    sh 'gradle test'
+                }
+            }
+        }
         stage ('Deploy') {
             steps {
                 archiveArtifacts artifacts: 'build/libs/*', fingerprint: true, followSymlinks: false

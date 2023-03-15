@@ -4,7 +4,6 @@ import com.judell.constants.RouteConstants;
 import com.judell.response.GenericResponse;
 import com.judell.services.HealthService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
