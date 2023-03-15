@@ -17,11 +17,11 @@ import static org.mockito.Mockito.when;
 
 public class UserServiceTest {
 
-    @InjectMocks
-    UserService userService;
-
     @Mock
     UserDao userDao;
+
+    @InjectMocks
+    UserService userService;
 
     @BeforeEach
     void setUp() {

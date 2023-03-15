@@ -10,6 +10,7 @@ public class HealthService {
     public GenericResponse getHealth() {
         GenericResponse genericResponse = new GenericResponse();
 
+        genericResponse.setSuccess(true);
         genericResponse.setHttpStatus(HttpStatus.OK);
         genericResponse.setMessage("Healthy");
 
