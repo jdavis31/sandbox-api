@@ -1,7 +1,7 @@
 pipeline {
     agent any
     options {
-        copyArtifactPermission('spring-sandbox-api')
+        copyArtifactPermission('sandbox-api')
     }
     tools {
         gradle 'GRADLE_HOME'
@@ -27,7 +27,7 @@ pipeline {
                 copyArtifacts filter: 'build/libs/*',
                         fingerprintArtifacts: true,
                         flatten: true,
-                        projectName: 'spring-sandbox-api',
+                        projectName: 'sandbox-api',
                         selector: workspace(),
                         target: '/opt/ec2-user/api/sandbox'
 //                sh 'sudo service spring-sandbox-api restart'
