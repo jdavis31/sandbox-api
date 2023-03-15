@@ -21,6 +21,20 @@ pipeline {
                 }
             }
         }
+        stage ('Integration') {
+            steps {
+                script {
+                    echo 'integration'
+                }
+            }
+        }
+        stage ('End To End') {
+            steps {
+                script {
+                    echo 'end to end'
+                }
+            }
+        }
         stage ('Deploy') {
             steps {
                 archiveArtifacts artifacts: 'build/libs/*', fingerprint: true, followSymlinks: false
