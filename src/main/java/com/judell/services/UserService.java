@@ -20,7 +20,7 @@ public class UserService {
 
         userModel.setFirstName(addUserRequest.getFirstName());
         userModel.setLastName(addUserRequest.getLastName());
-        userModel.setEmail(addUserRequest.getEmail());
+        userModel.setEmail(addUserRequest.getEmail().toLowerCase());
 
         genericResponse.setMessage("User added");
         genericResponse.setSuccess(true);
