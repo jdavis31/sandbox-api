@@ -19,7 +19,7 @@ public class UserServiceTest {
 
     @Mock
     UserDao userDao;
-    
+
     @InjectMocks
     UserService userService;
 
